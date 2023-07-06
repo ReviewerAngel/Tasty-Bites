@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe RecipeFood, type: :model do
   before(:all) do
     @user = User.first
-    @user ||= User.create(name: 'Prantosh')
+    @user ||= User.create(name: 'Lucas')
 
     @food = Food.first
     @food ||= Food.create(name: 'Salt', measurement_unit: 'gram', price: 2, quantity: 3, user_id: @user.id)
